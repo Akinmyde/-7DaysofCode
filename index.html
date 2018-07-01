@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container"> 
+        
+        <form class="col-md-8 mx-md-auto">
+            <div class="header-wrapper">
+                <h1 class="header">Currency Converter</h1>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col">
+                    
+                    <label for="amount">Amount</label>
+                    <input type="number" class="form-control" id="amount" placeholder="How much?">
+                    
+                </div>
+                <div class="form-group col">
+                    <label for="currency">select from currency</label>
+                    <select name="currency" class="form-control" id="inputCurrency">
+                        <option disabled selected>Select a currency</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col">
+                    <p>select to currency</p>
+                    <select class="form-control" name="outputCurrency" id="outputCurrency">
+                        <option disabled selected>Select a currency</option>
+                    </select>
+
+                </div>
+                <div class="form-group col">
+                    <p>Result</p>
+                    <input type="text" readonly class="form-control" id="result">
+                </div>
+
+            </div>
+            <br>
+            <div class="btn-wrapper">
+                <button class="btn btn-primary btn-block" id="convertCurrency" onclick="showConverted();return false;">Convert</button>
+            </div>
+            <div class="result"></div>
+        </form>
+    </div>
+    </div>
+    <script src="index.js"></script>
+   <script src="indexDb.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,12 @@
+.btn {
+    width: 50%;
+    align-self: center;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
